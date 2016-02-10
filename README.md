@@ -24,7 +24,7 @@ The interface is intentionally simplified through a single static class (I know 
  - `Delay` - gets / sets the turtle delay in milliseconds after moving / rotating. By default the delay is 0 (no delay). Setting the delay to 200-300 will simulate an pleasant "animation effect".
 
 ## Demo - Windows Forms Turtle Graphics App
-1. Create a new empty Windows Form application with Visual Studio
+1. Create a new empty Windows Form application with Visual Studio.
 2. Put a button [Draw]. Handle the `Click` event add this code:
 ```
 // Assign a delay to visualize the drawing process
@@ -51,3 +51,6 @@ Turtle.Rotate(30);
 ```
 3. Enjoy the result:
 
+![Nakov Turtle Graphics for C# / .NET - free open-source library](https://github.com/nakov/TurtleGraphics.NET/blob/master/Nakov.TurtleGraphics-Demo.gif "Nakov Turtle Graphics for C# / .NET - free open-source library")
+
+See the full source code here: https://github.com/nakov/TurtleGraphics.NET/tree/master/Turtle-Graphics-Example
