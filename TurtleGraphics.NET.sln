@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nakov.TurtleGraphics", "Nakov.TurtleGraphics\Nakov.TurtleGraphics.csproj", "{ED9BE8F0-2E5C-41EA-A8EC-A9DB81D29A11}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turtle-Graphics-Example", "Turtle-Graphics-Example\Turtle-Graphics-Example.csproj", "{0009E232-CD03-4C6D-B288-70EFA46083AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nakov.TurtleGraphics", "Nakov.TurtleGraphics\Nakov.TurtleGraphics.csproj", "{ED9BE8F0-2E5C-41EA-A8EC-A9DB81D29A11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
