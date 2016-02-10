@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nakov.TurtleGraphics", "Nakov.TurtleGraphics\Nakov.TurtleGraphics.csproj", "{ED9BE8F0-2E5C-41EA-A8EC-A9DB81D29A11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turtle-Graphics-Example", "Turtle-Graphics-Example\Turtle-Graphics-Example.csproj", "{0009E232-CD03-4C6D-B288-70EFA46083AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED9BE8F0-2E5C-41EA-A8EC-A9DB81D29A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED9BE8F0-2E5C-41EA-A8EC-A9DB81D29A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED9BE8F0-2E5C-41EA-A8EC-A9DB81D29A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED9BE8F0-2E5C-41EA-A8EC-A9DB81D29A11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0009E232-CD03-4C6D-B288-70EFA46083AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0009E232-CD03-4C6D-B288-70EFA46083AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0009E232-CD03-4C6D-B288-70EFA46083AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0009E232-CD03-4C6D-B288-70EFA46083AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
