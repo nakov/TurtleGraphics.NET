@@ -25,7 +25,11 @@ The interface is intentionally simplified through a single static class (I know 
 
 ## Demo - Windows Forms Turtle Graphics App
 1. Create a new empty Windows Form application with Visual Studio.
-2. Put a button [Draw]. Handle the `Click` event add this code:
+2. Install the NuGet package "Nakov.TurtleGraphics" from the Package Management Console in Visual Studio:
+```
+Install-Package Nakov.TurtleGraphics
+```
+3. Put a button [Draw]. Handle the `Click` event add this code:
 ```
 // Assign a delay to visualize the drawing process
 Turtle.Delay = 200;
@@ -49,7 +53,7 @@ Turtle.Forward(150);
 Turtle.PenDown();
 Turtle.Rotate(30);
 ```
-3. Enjoy the result:
+4. Enjoy the result:
 
 ![Nakov Turtle Graphics for C# / .NET - free open-source library](https://github.com/nakov/TurtleGraphics.NET/blob/master/Nakov.TurtleGraphics-Demo.gif "Nakov Turtle Graphics for C# / .NET - free open-source library")
 
