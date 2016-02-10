@@ -1,10 +1,10 @@
 # TurtleGraphics.NET
-C# Turtule Graphics library - for teaching kids to code
+C# Turtle Graphics library - for teaching kids to code
 
 This library provides а **very simple "[turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics)" drawing interface for C#**, designed for kids, learning to code, or teachers who want to illustrate programming visually.
 
 ## TurtleGraphics.NET - Developer's Reference
-The interface is intentionally simplified through a single static class (I know this is not a good practice in OOP), to enable kids start playing with the turtle with just few clicks, without knowing anything about "classes" and "objects". The class Turtle supports all major turtule graphics primitives in Windows Forms C# / .NET GUI applications:
+The interface is intentionally simplified through a single static class (I know this is not a good practice in OOP), to enable kids start playing with the turtle with just few clicks, without knowing anything about "classes" and "objects". The class Turtle supports all major turtle graphics primitives in Windows Forms C# / .NET GUI applications:
  - `Init()` - initializes the turtle graphics system. Callers can specify the target Windows Forms control to hold the drawing surface (e.g. a Panel). If not specified, the currently active form is used as drawing surface. If not called, it will be called on demand with the first turtle move / draw command. Initially the turtle location is {0, 0} (the screen center) and the direction (angle) is 0 degrees (up).
  - `Dispose()` / `Reset()` - destroys the turtle graphics system and deallocates all resources, associated with it.
  - `Forward(distance)` - moves the turtle forward in the current direction by the specified distance. If the pen is down, the turtle draws a line from the current to the new position, otherwise it just moves without leaving a track.
@@ -24,12 +24,12 @@ The interface is intentionally simplified through a single static class (I know 
  - `Delay` - gets / sets the turtle delay in milliseconds after moving / rotating. By default the delay is 0 (no delay). Setting the delay to 200-300 will simulate an pleasant "animation effect".
 
 ## Demo - Windows Forms Turtle Graphics App
-1. Create a new empty Windows Form application with Visual Studio.
-2. Install the NuGet package "Nakov.TurtleGraphics" from the Package Management Console in Visual Studio:
+1. Create a **new empty Windows Form application"" with Visual Studio.
+2. Install the **NuGet package "Nakov.TurtleGraphics"** from the Package Management Console in Visual Studio:
 ```
 Install-Package Nakov.TurtleGraphics
 ```
-3. Put a button [Draw]. Handle the `Click` event add this code:
+3. Put a **button [Draw]**. Handle the **`Click`** event add this code:
 ```
 // Assign a delay to visualize the drawing process
 Turtle.Delay = 200;
@@ -53,8 +53,8 @@ Turtle.Forward(150);
 Turtle.PenDown();
 Turtle.Rotate(30);
 ```
-4. Enjoy the result:
+4. Enjoy the application:
 
 ![Nakov Turtle Graphics for C# / .NET - free open-source library](https://github.com/nakov/TurtleGraphics.NET/blob/master/Nakov.TurtleGraphics-Demo.gif "Nakov Turtle Graphics for C# / .NET - free open-source library")
 
-See the full source code here: https://github.com/nakov/TurtleGraphics.NET/tree/master/Turtle-Graphics-Example
+See the full source code here: https://github.com/nakov/TurtleGraphics.NET/tree/master/Turtle-Graphics-Example.
