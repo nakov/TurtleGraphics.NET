@@ -1,7 +1,7 @@
 # TurtleGraphics.NET
 C# Turtule Graphics library - for teaching kids to code
 
-This library provides а **very simple "[turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics)" drawing interface for C#**, designed for kids, learning to code.
+This library provides а **very simple "[turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics)" drawing interface for C#**, designed for kids, learning to code, or teachers who want to illustrate programming visually.
 
 ## TurtleGraphics.NET - Developer's Reference
 The interface is intentionally simplified through a single static class (I know this is not a good practice in OOP), to enable kids start playing with the turtle with just few clicks, without knowing anything about "classes" and "objects". The class Turtle supports all major turtule graphics primitives in Windows Forms C# / .NET GUI applications:
