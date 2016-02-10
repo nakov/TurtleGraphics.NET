@@ -54,11 +54,6 @@
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="TurtleGraphicsDemoForm.resx">
-      <DependentUpon>TurtleGraphicsDemoForm.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Nakov.TurtleGraphics\Nakov.TurtleGraphics.csproj">
       <Project>{ed9be8f0-2e5c-41ea-a8ec-a9db81d29a11}</Project>
       <Name>Nakov.TurtleGraphics</Name>
