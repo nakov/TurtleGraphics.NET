@@ -1,4 +1,4 @@
-# TurtleGraphics.NET
+# Nakov.TurtleGraphics
 C# Turtle Graphics library - for teaching kids to code
 
 ![Nakov Turtle Graphics for C# / .NET - free open-source library](https://github.com/nakov/TurtleGraphics.NET/blob/master/Nakov.TurtleGraphics-Demo.gif "Nakov Turtle Graphics for C# / .NET - free open-source library")
