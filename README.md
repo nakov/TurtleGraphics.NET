@@ -24,7 +24,7 @@ The interface is intentionally simplified through a single static class (I know 
  - `Delay` - gets / sets the turtle delay in milliseconds after moving / rotating. By default the delay is 0 (no delay). Setting the delay to 200-300 will simulate an pleasant "animation effect".
 
 ## Demo - Windows Forms Turtle Graphics App
-1. Create a **new empty Windows Form application"" with Visual Studio.
+1. Create a **new empty Windows Form application** with Visual Studio.
 2. Install the **NuGet package "Nakov.TurtleGraphics"** from the Package Management Console in Visual Studio:
 ```
 Install-Package Nakov.TurtleGraphics
