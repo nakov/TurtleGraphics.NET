@@ -11,7 +11,7 @@ This library provides а **very simple "[turtle graphics](https://en.wikipedia.o
 ```
 Install-Package Nakov.TurtleGraphics
 ```
-3. Put a **button [Draw]**. Handle the **`Click`** event add this code:
+3. Put a **button [Draw]**. Handle the **`Click`** event and add this code:
 ```
 // Assign a delay to visualize the drawing process
 Turtle.Delay = 200;
