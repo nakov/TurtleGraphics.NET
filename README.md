@@ -1,5 +1,5 @@
 # Nakov.TurtleGraphics
-C# Turtle Graphics library - for teaching kids to code
+C# Turtle Graphics library - for teaching kids to code.
 
 ![Nakov Turtle Graphics for C# / .NET - free open-source library](https://github.com/nakov/TurtleGraphics.NET/blob/master/Nakov.TurtleGraphics-Demo.gif "Nakov Turtle Graphics for C# / .NET - free open-source library")
 
@@ -27,7 +27,7 @@ The interface is intentionally simplified through a single static class (I know 
 
 ## Demo - Windows Forms Turtle Graphics App
 1. Create a **new empty Windows Form application** with Visual Studio.
-2. Install the **NuGet package "Nakov.TurtleGraphics"** from the Package Management Console in Visual Studio:
+2. Install the [**NuGet package "Nakov.TurtleGraphics"**](https://www.nuget.org/packages/Nakov.TurtleGraphics/) from the Package Management Console in Visual Studio:
 ```
 Install-Package Nakov.TurtleGraphics
 ```
