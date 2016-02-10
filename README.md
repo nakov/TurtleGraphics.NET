@@ -22,3 +22,32 @@ The interface is intentionally simplified through a single static class (I know 
  - `PenVisible` - gets / sets the visibility of the pen. The default pen size is true. True means the pen is down (draws a line when the turtle moves). False means the pen is up (no line is drawn when the turtle moves).
  - `ShowTurtle` - gets / sets whether the turtle is visible. By default it is visible.
  - `Delay` - gets / sets the turtle delay in milliseconds after moving / rotating. By default the delay is 0 (no delay). Setting the delay to 200-300 will simulate an pleasant "animation effect".
+
+## Demo - Windows Forms Turtle Graphics App
+1. Create a new empty Windows Form application with Visual Studio
+2. Put a button [Draw]. Handle the `Click` event add this code:
+```
+// Assign a delay to visualize the drawing process
+Turtle.Delay = 200;
+
+// Draw a equilateral triangle
+Turtle.Rotate(30);
+Turtle.Forward(200);
+Turtle.Rotate(120);
+Turtle.Forward(200);
+Turtle.Rotate(120);
+Turtle.Forward(200);
+
+// Draw a line in the triangle
+Turtle.Rotate(-30);
+Turtle.PenUp();
+Turtle.Backward(50);
+Turtle.PenDown();
+Turtle.Backward(100);
+Turtle.PenUp();
+Turtle.Forward(150);
+Turtle.PenDown();
+Turtle.Rotate(30);
+```
+3. Enjoy the result:
+
