@@ -42,7 +42,7 @@ Turtle.Rotate(30);
 See the full source code here: https://github.com/nakov/TurtleGraphics.NET/tree/master/Turtle-Graphics-Example.
 
 ## TurtleGraphics.NET - Developer's Reference
-The interface is intentionally simplified through a single static class (I know this is not a good practice in OOP), to enable kids start playing with the turtle with just few clicks, without knowing anything about "classes" and "objects". The class Turtle supports all major turtle graphics primitives in Windows Forms C# / .NET GUI applications:
+The interface is intentionally simplified through a single static class (I know this is not a good practice in OOP), to enable kids start playing with the turtle with just few clicks, without knowing anything about "classes" and "objects". The class **`Turtle`** supports all major turtle graphics primitives in Windows Forms C# / .NET GUI applications:
  - `Init()` - initializes the turtle graphics system. Callers can specify the target Windows Forms control to hold the drawing surface (e.g. a Panel). If not specified, the currently active form is used as drawing surface. If not called, it will be called on demand with the first turtle move / draw command. Initially the turtle location is {0, 0} (the screen center) and the direction (angle) is 0 degrees (up).
  - `Dispose()` / `Reset()` - destroys the turtle graphics system and deallocates all resources, associated with it.
  - `Forward(distance)` - moves the turtle forward in the current direction by the specified distance. If the pen is down, the turtle draws a line from the current to the new position, otherwise it just moves without leaving a track.
