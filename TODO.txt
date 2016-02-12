@@ -1,3 +1,8 @@
 TODO: add "create windows form on demand" feature.
 
-The idea is that if we create a C# console application, to be able to directly use the turtle graphics without havin a Form.
+bug: Reset does not make X = 0, Y = 0.
+
+bug: Does not compile in VS 2013 (.NET 4.5)
+
+bug: Long draw with delay=200 fails, e.g. draw 200 lines. Seems like the draw takes too much time to be processed in the event handler.
+
