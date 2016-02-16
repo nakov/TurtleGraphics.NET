@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Nakov.TurtleGraphics</id>
-    <version>1.0.0.1</version>
+    <version>1.0.0.2</version>
     <title>Nakov.TurtleGraphics - turtle graphics library for C# / .NET</title>
     <summary>This library provides а very simple "turtle graphics" drawing interface for C#, designed for kids, learning to code, or teachers who want to illustrate programming visually.</summary>
     <authors>Svetlin Nakov</authors>

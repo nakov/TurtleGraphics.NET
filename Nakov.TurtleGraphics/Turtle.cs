@@ -9,19 +9,47 @@ namespace Nakov.TurtleGraphics
 {
     public static class Turtle
     {
-        public static float X { get; set; }
+        private static float x;
+        public static float X
+        {
+            get
+            {
+                InitOnDemand();
+                return x;
+            }
+            set
+            {
+                InitOnDemand();
+                x = value;
+            }
+        }
 
-        public static float Y { get; set; }
+        private static float y;
+        public static float Y
+        {
+            get
+            {
+                InitOnDemand();
+                return y;
+            }
+            set
+            {
+                InitOnDemand();
+                y = value;
+            }
+        }
 
         private static float angle;
         public static float Angle
         {
             get
             {
+                InitOnDemand();
                 return angle;
             }
             set
             {
+                InitOnDemand();
                 angle = value % 360;
                 if (angle < 0)
                 {
@@ -58,7 +86,20 @@ namespace Nakov.TurtleGraphics
             }
         }
 
-        public static bool PenVisible { get; set; }
+        private static bool penVisible;
+        public static bool PenVisible
+        {
+            get
+            {
+                InitOnDemand();
+                return penVisible;
+            }
+            set
+            {
+                InitOnDemand();
+                penVisible = value;
+            }
+        }
 
         public static bool ShowTurtle
         {
@@ -74,11 +115,24 @@ namespace Nakov.TurtleGraphics
             }
         }
 
-        public static int Delay { get; set; }
+        private static int delay;
+        public static int Delay
+        {
+            get
+            {
+                InitOnDemand();
+                return delay;
+            }
+            set
+            {
+                InitOnDemand();
+                delay = value;
+            }
+        }
 
-        private const int DrawAreaSize = 10000;
-        private static readonly Color DefaultColor = Color.Blue;
-        private const int DefaultPenSize = 7;        
+        public const int DrawAreaSize = 10000;
+        public static readonly Color DefaultColor = Color.Blue;
+        public const int DefaultPenSize = 7;        
 
         private static Control drawControl;
         private static Image drawImage;
@@ -117,6 +171,7 @@ namespace Nakov.TurtleGraphics
             Y = 0;
             Angle = 0;
             PenVisible = true;
+            // Delay = 0;  // Intentionally preserve the "Delay" settings
 
             // Initialize the turtle head image
             turtleHeadImage = new PictureBox();
@@ -224,6 +279,7 @@ namespace Nakov.TurtleGraphics
 
         private static void InitOnDemand()
         {
+            // Create the drawing surface if it does not already exist
             if (drawControl == null)
             {
                 Init();
@@ -283,6 +339,7 @@ namespace Nakov.TurtleGraphics
                 // Immediately paint the control and them delay
                 drawControl.Update();
                 Thread.Sleep(Delay);
+                Application.DoEvents();
             }
         }
 
