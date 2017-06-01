@@ -61,4 +61,4 @@ The interface is intentionally simplified through a single static class (I know 
  - `ShowTurtle` - gets / sets whether the turtle is visible. By default it is visible.
  - `Delay` - gets / sets the turtle delay in milliseconds after moving / rotating. By default the delay is 0 (no delay). Setting the delay to 100-300 will simulate a pleasant "animation effect". `Delay` is preserved after `Reset()`.
 
-Added a new line
+Changed a new line
