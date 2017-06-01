@@ -1,7 +1,8 @@
-[not possible] TODO: add "create windows form on demand" feature.
+[not possible] TODO: add "Create Windows Form on demand" feature.
 
 [fixed] bug: Reset() does not assign X = 0, Y = 0.
 
 bug: Does not compile in VS 2013 (.NET 4.5)
 
 [fixed] bug: Long draw with delay=200 fails, e.g. draw 200 lines. Seems like the draw takes too much time to be processed in the event handler.
+
