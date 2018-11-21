@@ -7,10 +7,10 @@ using System.Windows.Forms;
 
 namespace Nakov.TurtleGraphics
 {
-    public static class Turtle
+    public class Turtle
     {
-        private static float x;
-        public static float X
+        private float x;
+        public float X
         {
             get
             {
@@ -24,8 +24,8 @@ namespace Nakov.TurtleGraphics
             }
         }
 
-        private static float y;
-        public static float Y
+        private float y;
+        public float Y
         {
             get
             {
@@ -39,8 +39,8 @@ namespace Nakov.TurtleGraphics
             }
         }
 
-        private static float angle;
-        public static float Angle
+        private float angle;
+        public float Angle
         {
             get
             {
@@ -58,7 +58,7 @@ namespace Nakov.TurtleGraphics
             }
         }
 
-        public static Color PenColor
+        public Color PenColor
         {
             get
             {
@@ -72,7 +72,7 @@ namespace Nakov.TurtleGraphics
             }
         }
 
-        public static float PenSize
+        public float PenSize
         {
             get
             {
@@ -86,8 +86,8 @@ namespace Nakov.TurtleGraphics
             }
         }
 
-        private static bool penVisible;
-        public static bool PenVisible
+        private bool penVisible;
+        public bool PenVisible
         {
             get
             {
@@ -101,7 +101,7 @@ namespace Nakov.TurtleGraphics
             }
         }
 
-        public static bool ShowTurtle
+        public bool ShowTurtle
         {
             get
             {
@@ -115,8 +115,8 @@ namespace Nakov.TurtleGraphics
             }
         }
 
-        private static int delay;
-        public static int Delay
+        private int delay;
+        public int Delay
         {
             get
             {
@@ -132,15 +132,15 @@ namespace Nakov.TurtleGraphics
 
         public const int DrawAreaSize = 10000;
         public static readonly Color DefaultColor = Color.Blue;
-        public const int DefaultPenSize = 7;        
+        public static readonly int DefaultPenSize = 7;
 
-        private static Control drawControl;
-        private static Image drawImage;
-        private static Graphics drawGraphics;
-        private static Pen drawPen;
-        private static PictureBox turtleHeadImage;
+        private Control drawControl;
+        private Image drawImage;
+        private Graphics drawGraphics;
+        private Pen drawPen;
+        private PictureBox turtleHeadImage;
 
-        public static void Init(Control targetControl = null)
+        public void Init(Control targetControl = null)
         {
             // Dispose all resources if already allocated
             Dispose();
@@ -155,7 +155,7 @@ namespace Nakov.TurtleGraphics
             SetDoubleBuffered(drawControl);
 
             // Create an empty graphics area to be used by the turtle
-            drawImage = new Bitmap(DrawAreaSize, DrawAreaSize); 
+            drawImage = new Bitmap(DrawAreaSize, DrawAreaSize);
             drawControl.Paint += DrawControl_Paint;
             drawControl.ClientSizeChanged += DrawControl_ClientSizeChanged;
             drawGraphics = Graphics.FromImage(drawImage);
@@ -179,7 +179,7 @@ namespace Nakov.TurtleGraphics
             drawControl.Controls.Add(turtleHeadImage);
         }
 
-        public static void Dispose()
+        public void Dispose()
         {
             if (drawControl != null)
             {
@@ -208,12 +208,12 @@ namespace Nakov.TurtleGraphics
             }
         }
 
-        public static void Reset()
+        public void Reset()
         {
             Dispose();
         }
 
-        public static void Forward(float distance = 10)
+        public void Forward(float distance = 10)
         {
             var angleRadians = Angle * Math.PI / 180;
             var newX = X + (float)(distance * Math.Sin(angleRadians));
@@ -221,12 +221,12 @@ namespace Nakov.TurtleGraphics
             MoveTo(newX, newY);
         }
 
-        public static void Backward(float distance = 10)
+        public void Backward(float distance = 10)
         {
             Forward(-distance);
         }
 
-        public static void MoveTo(float newX, float newY)
+        public void MoveTo(float newX, float newY)
         {
             InitOnDemand();
             var fromX = DrawAreaSize / 2 + X;
@@ -243,15 +243,15 @@ namespace Nakov.TurtleGraphics
             PaintAndDelay();
         }
 
-        public static void Rotate(float angleDelta)
+        public void Rotate(float angleDelta)
         {
             InitOnDemand();
             Angle += angleDelta;
             DrawTurtle();
             PaintAndDelay();
         }
-        
-        public static void RotateTo(float newAngle)
+
+        public void RotateTo(float newAngle)
         {
             InitOnDemand();
             Angle = newAngle;
@@ -259,17 +259,17 @@ namespace Nakov.TurtleGraphics
             PaintAndDelay();
         }
 
-        public static void PenUp()
+        public void PenUp()
         {
             PenVisible = false;
         }
 
-        public static void PenDown()
+        public void PenDown()
         {
             PenVisible = true;
         }
 
-        private static void SetDoubleBuffered(Control control)
+        private void SetDoubleBuffered(Control control)
         {
             // set instance non-public property with name "DoubleBuffered" to true
             typeof(Control).InvokeMember("DoubleBuffered",
@@ -277,7 +277,7 @@ namespace Nakov.TurtleGraphics
                 null, control, new object[] { true });
         }
 
-        private static void InitOnDemand()
+        private void InitOnDemand()
         {
             // Create the drawing surface if it does not already exist
             if (drawControl == null)
@@ -286,7 +286,7 @@ namespace Nakov.TurtleGraphics
             }
         }
 
-        private static void DrawTurtle()
+        private void DrawTurtle()
         {
             if (ShowTurtle)
             {
@@ -305,7 +305,7 @@ namespace Nakov.TurtleGraphics
             }
         }
 
-        private static Bitmap RotateImage(Bitmap bmp, float angleDegrees)
+        private Bitmap RotateImage(Bitmap bmp, float angleDegrees)
         {
             Bitmap rotatedImage = new Bitmap(bmp.Width, bmp.Height);
             using (Graphics g = Graphics.FromImage(rotatedImage))
@@ -327,7 +327,7 @@ namespace Nakov.TurtleGraphics
             return rotatedImage;
         }
 
-        private static void PaintAndDelay()
+        private void PaintAndDelay()
         {
             drawControl.Invalidate();
             if (Delay == 0)
@@ -343,13 +343,13 @@ namespace Nakov.TurtleGraphics
             }
         }
 
-        private static void DrawControl_ClientSizeChanged(object sender, EventArgs e)
+        private void DrawControl_ClientSizeChanged(object sender, EventArgs e)
         {
             drawControl.Invalidate();
             DrawTurtle();
         }
 
-        private static void DrawControl_Paint(object sender, PaintEventArgs e)
+        private void DrawControl_Paint(object sender, PaintEventArgs e)
         {
             if (drawControl != null)
             {

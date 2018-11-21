@@ -32,6 +32,7 @@
             this.buttonDrawSpiral = new System.Windows.Forms.Button();
             this.buttonReset = new System.Windows.Forms.Button();
             this.buttonShowHideTurtle = new System.Windows.Forms.Button();
+            this.btnAddTurtle = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonDraw
@@ -43,6 +44,16 @@
             this.buttonDraw.Text = "Draw";
             this.buttonDraw.UseVisualStyleBackColor = true;
             this.buttonDraw.Click += new System.EventHandler(this.buttonDraw_Click);
+            // 
+            // buttonDrawSpiral
+            // 
+            this.buttonDrawSpiral.Location = new System.Drawing.Point(11, 63);
+            this.buttonDrawSpiral.Name = "buttonDrawSpiral";
+            this.buttonDrawSpiral.Size = new System.Drawing.Size(78, 35);
+            this.buttonDrawSpiral.TabIndex = 0;
+            this.buttonDrawSpiral.Text = "Spiral";
+            this.buttonDrawSpiral.UseVisualStyleBackColor = true;
+            this.buttonDrawSpiral.Click += new System.EventHandler(this.buttonDrawSpiral_Click);
             // 
             // buttonReset
             // 
@@ -64,21 +75,22 @@
             this.buttonShowHideTurtle.UseVisualStyleBackColor = true;
             this.buttonShowHideTurtle.Click += new System.EventHandler(this.buttonShowHideTurtle_Click);
             // 
-            // buttonDrawSpiral
+            // btnAddTurtle
             // 
-            this.buttonDrawSpiral.Location = new System.Drawing.Point(11, 63);
-            this.buttonDrawSpiral.Name = "buttonDrawSpiral";
-            this.buttonDrawSpiral.Size = new System.Drawing.Size(78, 35);
-            this.buttonDrawSpiral.TabIndex = 0;
-            this.buttonDrawSpiral.Text = "Spiral";
-            this.buttonDrawSpiral.UseVisualStyleBackColor = true;
-            this.buttonDrawSpiral.Click += new System.EventHandler(this.buttonDrawSpiral_Click);
+            this.btnAddTurtle.Location = new System.Drawing.Point(12, 218);
+            this.btnAddTurtle.Name = "btnAddTurtle";
+            this.btnAddTurtle.Size = new System.Drawing.Size(78, 34);
+            this.btnAddTurtle.TabIndex = 3;
+            this.btnAddTurtle.Text = "Add Turtle";
+            this.btnAddTurtle.UseVisualStyleBackColor = true;
+            this.btnAddTurtle.Click += new System.EventHandler(this.btnAddTurtle_Click);
             // 
             // TurtleGraphicsDemoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(688, 509);
+            this.Controls.Add(this.btnAddTurtle);
             this.Controls.Add(this.buttonDraw);
             this.Controls.Add(this.buttonDrawSpiral);
             this.Controls.Add(this.buttonReset);
@@ -86,6 +98,7 @@
             this.Name = "TurtleGraphicsDemoForm";
             this.Text = "Nakov.TurtleGraphics - Demo";
             this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -94,6 +107,7 @@
         private System.Windows.Forms.Button buttonDrawSpiral;
         private System.Windows.Forms.Button buttonReset;
         private System.Windows.Forms.Button buttonShowHideTurtle;
+        private System.Windows.Forms.Button btnAddTurtle;
     }
 }
 
