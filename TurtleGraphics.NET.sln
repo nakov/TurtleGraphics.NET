@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turtle-Graphics-Example", "Turtle-Graphics-Example\Turtle-Graphics-Example.csproj", "{0009E232-CD03-4C6D-B288-70EFA46083AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turtle-Graphics-Example", "Turtle-Graphics-Example\Turtle-Graphics-Example.csproj", "{E1DC9935-6F3F-4ABB-BA24-FB64B04F3667}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nakov.TurtleGraphics", "Nakov.TurtleGraphics\Nakov.TurtleGraphics.csproj", "{ED9BE8F0-2E5C-41EA-A8EC-A9DB81D29A11}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nakov.TurtleGraphics", "Nakov.TurtleGraphics\Nakov.TurtleGraphics.csproj", "{7BE09D2D-D5A8-4EBC-83C9-2A8F3D522C26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +13,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ED9BE8F0-2E5C-41EA-A8EC-A9DB81D29A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED9BE8F0-2E5C-41EA-A8EC-A9DB81D29A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED9BE8F0-2E5C-41EA-A8EC-A9DB81D29A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED9BE8F0-2E5C-41EA-A8EC-A9DB81D29A11}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0009E232-CD03-4C6D-B288-70EFA46083AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0009E232-CD03-4C6D-B288-70EFA46083AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0009E232-CD03-4C6D-B288-70EFA46083AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0009E232-CD03-4C6D-B288-70EFA46083AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1DC9935-6F3F-4ABB-BA24-FB64B04F3667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1DC9935-6F3F-4ABB-BA24-FB64B04F3667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1DC9935-6F3F-4ABB-BA24-FB64B04F3667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1DC9935-6F3F-4ABB-BA24-FB64B04F3667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BE09D2D-D5A8-4EBC-83C9-2A8F3D522C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BE09D2D-D5A8-4EBC-83C9-2A8F3D522C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BE09D2D-D5A8-4EBC-83C9-2A8F3D522C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BE09D2D-D5A8-4EBC-83C9-2A8F3D522C26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F6E104C-B49D-4E58-848B-A615FADACEFA}
 	EndGlobalSection
 EndGlobal

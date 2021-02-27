@@ -16,6 +16,7 @@ namespace Turtle_Graphics_Example
         {
             // Assign a delay to visualize the drawing process
             Turtle.Delay = 150;
+            Turtle.PenSize = 8;
 
             // Draw a equilateral triangle
             Turtle.PenColor = Color.Green;
@@ -31,11 +32,8 @@ namespace Turtle_Graphics_Example
             Turtle.PenUp();
             Turtle.Backward(50);
             Turtle.PenDown();
-            Turtle.PenColor = Color.Red;
-            Turtle.PenSize = 5;
+            Turtle.PenColor = Color.Blue;
             Turtle.Backward(100);
-            Turtle.PenColor = Turtle.DefaultColor;
-            Turtle.PenSize = Turtle.DefaultPenSize;
             Turtle.PenUp();
             Turtle.Forward(150);
             Turtle.PenDown();

@@ -183,6 +183,10 @@ namespace Nakov.TurtleGraphics
         {
             if (drawControl != null)
             {
+                // Remove the associated events for the drawing control
+                drawControl.Paint -= DrawControl_Paint;
+                drawControl.ClientSizeChanged -= DrawControl_ClientSizeChanged;
+
                 // Release the pen object
                 drawPen.Dispose();
                 drawPen = null;
@@ -200,9 +204,7 @@ namespace Nakov.TurtleGraphics
                 turtleHeadImage.Dispose();
                 turtleHeadImage = null;
 
-                // Release the drawing control and its associated events
-                drawControl.Paint -= DrawControl_Paint;
-                drawControl.ClientSizeChanged -= DrawControl_ClientSizeChanged;
+                // Release the drawing control
                 drawControl.Invalidate();
                 drawControl = null;
             }

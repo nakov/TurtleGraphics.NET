@@ -1,7 +1,7 @@
 ﻿# Nakov.TurtleGraphics
 C# Turtle Graphics library - for teaching kids to code.
 
-![Nakov Turtle Graphics for C# / .NET - free open-source library](https://github.com/nakov/TurtleGraphics.NET/blob/master/Nakov.TurtleGraphics-Demo.gif "Nakov Turtle Graphics for C# / .NET - free open-source library")
+![Nakov Turtle Graphics for C# / .NET - free open-source library](https://github.com/nakov/TurtleGraphics.NET/raw/master/Nakov.TurtleGraphics-Demo.gif "Nakov Turtle Graphics for C# / .NET - free open-source library")
 
 This library provides а **very simple "[turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics)" drawing interface for C#**, designed for kids, learning to code, or teachers who want to illustrate programming visually.
 
@@ -54,7 +54,7 @@ The interface is intentionally simplified through a single static class (I know 
  - `PenDown()` - moves the pen down (makes further moves visible). Further calls to `Forward(distance)` / `Backward(distance)` / `MoveTo(x, y)` will draw a line from the current to the new position.
  - `X` - gets / sets the current turtle horizontal position. The initial turtle position is the screen center {0, 0}. Increasing X will move the turtle right.
  - `Y` - gets / sets the current turtle vertical position. The initial turtle position is the screen center {0, 0}. Increasing Y will move the turtle up.
- - `Angle` - gets / sets the current turtle direction (angle in degrees). The value of 0 means up, 90 means right, 180 means down and 270 means left. The `Angle` is always kept in the range [0...360). Initially the angle is 0.
+ - `Angle` - gets / sets the current turtle direction (angle in degrees). The value of 0 means up, 90 means right, 180 means down and 270 means left. The `Angle` is always kept in the range \[0...360). Initially the angle is 0.
  - `PenColor` - gets / sets the color of the pen. The default pen color is "blue".
  - `PenSize` - gets / sets the size of the pen (in pixels). The default pen size is 7.
  - `PenVisible` - gets / sets the visibility of the pen. The default pen size is true. True means the pen is down (draws a line when the turtle moves). False means the pen is up (no line is drawn when the turtle moves).
