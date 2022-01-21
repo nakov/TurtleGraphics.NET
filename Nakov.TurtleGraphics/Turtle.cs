@@ -112,6 +112,7 @@ namespace Nakov.TurtleGraphics
             {
                 InitOnDemand();
                 turtleHeadImage.Visible = value;
+                DrawTurtle();
             }
         }
 
